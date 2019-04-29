@@ -27,8 +27,11 @@ namespace FindDuplicateNumber
 
             for (int i = 0; i < intArray.Length - 1; i++)
             {
+                // if current value = the next value in array.
+                // We found duplicate and can break.
                 if (intArray[i] == intArray[i + 1])
                 {
+                    // Duplicate number = current index value in intArray.
                     duplicateNumber = intArray[i];
                     break;
                 }
