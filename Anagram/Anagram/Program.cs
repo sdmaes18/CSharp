@@ -31,13 +31,16 @@ namespace Anagram
             // If each index is the same they are anagrams.
             for(int i=0; i < firstCharArray.Length; i++)
             {
+                // If current value = same index value in other char. array, continue on with process.
                 if (firstCharArray[i].Equals(secondCharArray[i]))
                 {
+
                     flag = true;
                     continue;
                 }
                 else
                 {
+                    // two comparing values are not the same so we know words are not anagrams.
                     flag = false;
                     break;
                 }
